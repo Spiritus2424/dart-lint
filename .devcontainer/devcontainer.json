@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Construction Novalux Website",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Dart-Code.dart-code"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"editor.formatOnSave": true,
+				"html.autoClosingTags": true,
+				"editor.linkedEditing": true,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll": "always",
+					"source.organizeImports": "always"
+				},
+				"editor.suggest.snippetsPreventQuickSuggestions": false,
+				"editor.inlineSuggest.enabled": true
+			}
+		}
+	},
+	"mounts": [
+		// 		volumes:
+		// - /etc/timezone:/etc/timezone:ro
+		// - /etc/localtime:/etc/localtime:ro
+		{
+			"type": "volume",
+			"source": "constructionsnovalux-node_modules",
+			"target": "/workspaces/constructionsnovalux/node_modules"
+		}
+	]
+}
