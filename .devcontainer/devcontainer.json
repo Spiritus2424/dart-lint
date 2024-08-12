@@ -29,10 +29,10 @@
 		// 		volumes:
 		// - /etc/timezone:/etc/timezone:ro
 		// - /etc/localtime:/etc/localtime:ro
-		{
-			"type": "volume",
-			"source": "constructionsnovalux-node_modules",
-			"target": "/workspaces/constructionsnovalux/node_modules"
-		}
+		// {
+		// 	"type": "volume",
+		// 	"source": "constructionsnovalux-node_modules",
+		// 	"target": "/workspaces/constructionsnovalux/node_modules"
+		// }
 	]
 }
